@@ -17,6 +17,12 @@ if($_SESSION['account_type']== NULL){
     $_SESSION['account_type'] = "";
 }
 
+$stmt1 = $conn1 -> prepare("SELECT * FROM products LIMIT 4");
+
+$stmt1->execute();
+
+$featured_products=$stmt1->get_result();
+
 ?>
 
 
@@ -112,7 +118,6 @@ if($_SESSION['account_type']== NULL){
         <p>Here you can check out our featured products</p>
     </div>
     <div class="row mx-auto container-fluid">
-        <?php include 'actions/get_fetured_products.php'; ?>
 
         <?php foreach($featured_products as $f) {?>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
