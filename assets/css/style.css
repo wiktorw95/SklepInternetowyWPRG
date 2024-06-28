@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.nav-buttons{
+    margin-left: 50%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h6{
+    color: #D8D8D8;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+#search-block {
+    grid-area: search_bar;
+}
+
+form.search-bar {
+    padding: 20px;
+    justify-content: center;
+    grid-area: search_bar;
+}
+
+
+form.search-bar button {
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    color: white;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button:hover{
+    background-color: coral;
+}
+
+.navbar{
+    font-size: 17px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-item{
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 50px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active .navbar i:hover{
+    color:coral;
+}
+
+@media only screen and (max-width: 990px){
+    .nav-buttons{
+        margin: 5px;
+    }
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+
+#home{
+    background-image: url('../imgs/mysterious-and-captivating-grey-polysphere-art-5xvepms9fbbi0bmh.jpg');
+    width: 100%;
+    height: 490px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+}
+
+#home h1{
+    color: lightblue;
+    text-align: center;
+}
+#new .one img{
+    width: 1000px;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#new .one{
+    position:relative;
+}
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.7;
+    background-color: rgb(1,1,1);
+    width: 100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color: cornsilk;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+#featured{
+    background-color: #fff;
+}
+
+/* Product */
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    width: 100px;
+    height: 100px;
+    transition: 0.3s all;;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+
+.buy-btn:hover{
+    background-color: lightblue;
+}
+
+.product .buy-btn{
+    background-color: lightblue;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;;
+}
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+hr{
+    width: 30px;
+    height: 3px !important;
+    opacity: 1 !important;
+    background-color: lightblue;
+}
+footer{
+    background-color: #222222;
+}
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.single-product input:focus{
+    outline: none;
+}
+.single-product .buy-btn{
+    background-color: lightblue;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: #222222;
+}
+
+/* Cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: lightblue;
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.cart td a{
+    color: lightblue;
+}
+.cart .remove-btn{
+    color: lightblue;
+    text-decoration: none;
+    font-size: 14px;
+    background-color:#fff;
+    border: none;
+    width: 100%;
+}
+.cart .edit-btn{
+    color: lightblue;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+}
+.cart .product-info p{
+    margin: 3px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid lightblue;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: flex-end;
+    background-color: lightblue;
+    color: gray;
+}
+
+/*Login*/
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid lightblue;
+}
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+#login-form #login-btn{
+    background-color: lightblue;
+    color: gray;
+}
+#login-form #register-url{
+    color:  lightblue;
+}
+
+
+/* register */
+
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid lightblue;
+}
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form #register-btn{
+    background-color: lightblue;
+    color: gray;
+}
+#register-form #login-url{
+    color: lightblue;
+}
+
+/*account*/
+
+#account{
+    display:grid;
+}
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+#account-form input{
+    margin: 5px auto;
+}
+#account-form #change-pass-btn{
+    color: gray;
+    background-color: lightblue;
+}
+#account-form #admin-pass-btn{
+    color: gray;
+    background-color: lightblue;
+}
+
+
+#account-info #orders-btn, #logout-btn{
+    color: lightblue;
+    text-decoration: none;
+}
+
+/*checkout*/
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+#checkout-form .checkout-large-element{
+    width: 95%;
+}
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+#checkout-form #checkout-btn{
+    color: gray;
+    background-color: lightblue;
+}
+orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.orders .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.orders th{
+    /*text-align: left;*/
+    padding: 5px 10px;
+    color: gray;
+    background-color: lightblue;
+}
+
+.orders th:nth-child(2){
+    /*text-align: right;*/
+}
+
+.orders td{
+    padding: 10px 20px;
+}
+.orders td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.orders td a{
+    color: lightblue;
+}
+.orders .order-details-btn{
+    color: gray;
+    background-color: lightblue;
+}
+
+
+
+
+.users .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.users th{
+    /*text-align: left;*/
+    padding: 5px 10px;
+    color: gray;
+    background-color: lightblue;
+}
+
+.users th:nth-child(2){
+    /*text-align: right;*/
+}
+
+.users td{
+    padding: 10px 20px;
+}
+.users td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.users td a{
+    color: lightblue;
+}
+.users .order-details-btn{
+    color: gray;
+    background-color: lightblue;
+}
